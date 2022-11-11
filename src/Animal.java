@@ -5,7 +5,7 @@ public class Animal {
 
     String name;
 
-    Boolean isAlive;
+    Boolean isAlive = true;
 Animal(String x)
 {
     this.isAlive = true;

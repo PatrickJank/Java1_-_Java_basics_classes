@@ -1,8 +1,10 @@
 import java.util.Scanner;
 public class Main {
+
+
     public static void main(String[] args) {
         Animal cat = new Animal("Cat");
-        cat.name = "Tomek";
+        //cat.name = "Tomek";
 
         //before feeding
         System.out.println(cat.weight);
@@ -24,12 +26,8 @@ public class Main {
         me.lastName = "Jankiewicz";
         me.pet = cat;
 
-        Car car = new Car("Skoda", "Octavia");
-        me.car = car;
-        me.car.YearOfProduction = 2009;
-        me.car.weight = 5000;
 
-//Display current salary
+
         System.out.println("Your current salary is " + me.getSalary());
         Scanner decision = new Scanner(System.in);
         System.out.println("Are you sure you want to change your salary? (Y/N)");
@@ -47,6 +45,12 @@ public class Main {
                     System.out.println("By the way, ZUS and US already know about your new salary, no point in hiding it");
                 }
             }
+
+        Car auto = new Car(5000.0);
+        System.out.println(me.getPet());
+        System.out.println(me.getAuto());
+        me.setAuto(5000.0, auto);
+        ;
 
 
 
