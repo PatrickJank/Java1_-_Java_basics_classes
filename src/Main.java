@@ -1,6 +1,5 @@
 public class Main {
     public static void main(String[] args) {
-       // System.out.println("Hello world!");
     Animal cat = new Animal("Cat");
     cat.name = "Tomek";
 
@@ -16,10 +15,16 @@ public class Main {
     }
     System.out.println(cat.weight);
 
+    //creating a new Human object, assigning previously created cat to the human
+Human me = new Human();
+me.firstName="Patrick";
+me.lastName="Jankiewicz";
+me.pet = cat;
 
-
-
-
+Car car = new Car("Skoda","Octavia");
+me.car = car;
+me.car.YearOfProduction = 2009;
+me.car.weight = 5000;
 
 
 
