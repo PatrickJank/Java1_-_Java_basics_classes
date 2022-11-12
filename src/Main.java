@@ -1,4 +1,7 @@
+import devices.Car;
+import devices.Phone;
 import java.util.Scanner;
+
 public class Main {
 
 
@@ -25,7 +28,9 @@ public class Main {
         me.firstName = "Patrick";
         me.lastName = "Jankiewicz";
         me.pet = cat;
-
+        Human friend = new Human();
+        me.firstName = "Roman";
+        me.lastName = "Kowalski";
 
 
         System.out.println("Your current salary is " + me.getSalary());
@@ -46,11 +51,16 @@ public class Main {
                 }
             }
 
-        Car auto = new Car(5000.0);
+        Car auto1 = new Car(5000.0);
         System.out.println(me.getPet());
         System.out.println(me.getAuto());
-        me.setAuto(5000.0, auto);
-        ;
+        me.setAuto(5000.0, auto1);
+        Car auto2 = new Car(6000.0);
+        friend.setAuto(6000.0,auto2);
+        System.out.println(auto1.check(auto2));
+        System.out.println(me.toStringN());
+        System.out.println(me.pet.toStringP());
+        System.out.println(auto1.toStringC());
 
 
 

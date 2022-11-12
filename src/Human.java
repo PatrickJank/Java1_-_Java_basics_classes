@@ -1,3 +1,4 @@
+import devices.Car;
 import java.time.format.DateTimeFormatter;
 import java.time.LocalDateTime;
 
@@ -38,17 +39,24 @@ import java.time.LocalDateTime;
 
     if (salary>= Price)
     {
-        System.out.println("Car has been bought with cash");
+        System.out.println("devices.Car has been bought with cash");
         auto.IsAcquired = true;
+        System.out.println(auto);
     }
     else if ((salary> Price/12.0)&&(salary < Price))
     {
-        System.out.println("Car has been purchased on credit");
+        System.out.println("devices.Car has been purchased on credit");
         auto.IsAcquired = true;
+        System.out.println(auto);
     }
     else
         System.out.println("You do not have enough cash, try saving some or take a loan");
+        System.out.println(auto);
     }
+    public String toStringN(){
+        return (lastName + " " + firstName);
+    }
+
 
 }
 

@@ -40,5 +40,8 @@ void takeForAWalk()
         System.out.println("The police is on their way you sicko");
     }
 
+    public String toStringP(){
+    return (species + " " + weight + " " + name);
+    }
 
 }
