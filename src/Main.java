@@ -51,18 +51,29 @@ public class Main {
                 }
             }
 
-        Car auto1 = new Car(5000.0);
+        Car auto1 = new Car(5000.0, "Skoda", "Octavia", 2001);
         System.out.println(me.getPet());
         System.out.println(me.getAuto());
         me.setAuto(5000.0, auto1);
-        Car auto2 = new Car(6000.0);
+        Car auto2 = new Car(6000.0, "Fiat", "Punto", 2010);
         friend.setAuto(6000.0,auto2);
         System.out.println(auto1.check(auto2));
         System.out.println(me.toStringN());
         System.out.println(me.pet.toStringP());
         System.out.println(auto1.toStringC());
 
+        me.Feed();
+        Phone phone = new Phone("Sony", "Erikson", 2002);
+        me.phone = phone;
+        //change phone state
+        System.out.println(phone.turnOn());
+        System.out.println(phone.turnOn());
+        System.out.println(phone.turnOn());
 
+        //change car state
+        System.out.println(auto1.turnOn());
+        System.out.println(auto1.turnOn());
+        System.out.println(auto1.turnOn());
 
-        }
+    }
     }
