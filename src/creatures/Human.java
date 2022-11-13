@@ -1,22 +1,26 @@
+package creatures;
+
+import creatures.Animal;
 import devices.Car;
 import devices.Phone;
-
 import java.time.format.DateTimeFormatter;
 import java.time.LocalDateTime;
 
 //importing data libraries for the task 3/4.2
- public class Human extends Animal{
-    Animal pet;
-    String firstName;
-    String lastName;
+ public class Human extends Animal {
+    public Animal pet;
+    public String firstName;
+    public String lastName;
 
-    Phone phone;
+    public Phone phone;
 
     // dziedziczenie z klasy animal
     public Human(){
-        super("homo sapiens");
+        super("homo sapiens", 70.0, "Gal Anonim");
         this.salary = 0.0;
     }
+
+
 
     private Car auto;
 

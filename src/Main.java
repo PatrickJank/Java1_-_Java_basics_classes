@@ -1,3 +1,6 @@
+import creatures.Animal;
+import creatures.Farm_animal;
+import creatures.Human;
 import devices.Car;
 import devices.Phone;
 import java.util.Scanner;
@@ -6,12 +9,17 @@ public class Main {
 
 
     public static void main(String[] args) {
-        Animal cat = new Animal("Cat");
-        //cat.name = "Tomek";
+        Human me = new Human();
+        me.firstName = "Patrick";
+        me.lastName = "Jankiewicz";
+
+        Animal cat = new Animal("Cat", 5.0, "Tomuś");
+        me.pet = cat;
+
 
         //before feeding
         System.out.println(cat.weight);
-        cat.Feed();
+
         //after feeding
         System.out.println(cat.weight);
 
@@ -23,11 +31,8 @@ public class Main {
     System.out.println(cat.weight);
 */
 
-        //creating a new Human object, assigning previously created cat to the human
-        Human me = new Human();
-        me.firstName = "Patrick";
-        me.lastName = "Jankiewicz";
-        me.pet = cat;
+        //creating a new creatures.Human object, assigning previously created cat to the human
+
         Human friend = new Human();
         me.firstName = "Roman";
         me.lastName = "Kowalski";
@@ -74,6 +79,11 @@ public class Main {
         System.out.println(auto1.turnOn());
         System.out.println(auto1.turnOn());
         System.out.println(auto1.turnOn());
+
+
+        System.out.println(me.pet.isOwned());
+        Farm_animal cow = new Farm_animal("Cow",30.0, "Milka");
+        System.out.println(cow);
 
     }
     }

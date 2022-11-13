@@ -1,24 +1,23 @@
+package creatures;
+
 public class Animal {
 
     final String species;
-    Double weight;
+    public Double weight;
 
-    String name;
-
+    public String name;
+public Human owner;
+public Boolean isOwned;
     Boolean isAlive = true;
-Animal(String x)
+public Animal(String x, Double weight, String name)
 {
     this.isAlive = true;
+    this.isOwned = true;
     species = x;
-    if(x == "dog" || x =="Dog")
-        weight = 10.0;
-    if(x == "cat" || x == "Cat")
-        weight = 5.0;
-    else
-        weight = 2.0;
+    this.weight = weight;
 }
 
-void Feed()
+public void Feed()
     {
         if(this.isAlive){
             this.weight += 0.1;
@@ -27,7 +26,7 @@ void Feed()
    if(!this.isAlive)
         System.out.println("He's dead, why are you doing this?");
     }
-void takeForAWalk()
+public void takeForAWalk()
     {
         if(this.isAlive)
             this.weight -= 0.2;
@@ -44,4 +43,7 @@ void takeForAWalk()
     return (species + " " + weight + " " + name);
     }
 
+    public Boolean isOwned() {
+        return this.isOwned;
+    }
 }
