@@ -1,6 +1,7 @@
 import creatures.Animal;
 import creatures.Farm_animal;
 import creatures.Human;
+import creatures.Pet;
 import devices.Car;
 import devices.Phone;
 import java.util.Scanner;
@@ -13,7 +14,8 @@ public class Main {
         me.firstName = "Patrick";
         me.lastName = "Jankiewicz";
 
-        Animal cat = new Animal("Cat", 5.0, "Tomuś");
+
+        Pet cat = new Pet("Kot", 10.0,"Tomek" );
         me.pet = cat;
 
 
@@ -85,5 +87,9 @@ public class Main {
         Farm_animal cow = new Farm_animal("Cow",30.0, "Milka");
         System.out.println(cow);
 
+        System.out.println(cat.feed());
+        System.out.println(cat.feed(2.0));
+     me.pet.feed();
+     System.out.println(me.pet.weight);
     }
     }

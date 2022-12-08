@@ -8,7 +8,7 @@ import java.time.LocalDateTime;
 
 //importing data libraries for the task 3/4.2
  public class Human extends Animal {
-    public Animal pet;
+    public Pet pet;
     public String firstName;
     public String lastName;
 

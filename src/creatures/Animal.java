@@ -1,20 +1,20 @@
 package creatures;
 
-public class Animal {
+public abstract class Animal {
 
-    final String species;
+    final public String species;
     public Double weight;
 
     public String name;
 public Human owner;
 public Boolean isOwned;
     Boolean isAlive = true;
-public Animal(String x, Double weight, String name)
+public Animal(String species, Double weight, String name)
 {
     this.isAlive = true;
     this.isOwned = true;
-    species = x;
     this.weight = weight;
+    this.species = species;
 }
 
 public void Feed()
